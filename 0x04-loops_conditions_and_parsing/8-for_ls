@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
-## This script is displaying "Best School" 10 times
-ls > list1
-cut -d '-' -f 2 list1 > list
-for word in $(cat list); do echo "$word" ;done
+## This script is displaying items in current directory edited.
+for i in * ; do echo "$i" | cut -d '-' -f 2 ;done
